@@ -712,7 +712,20 @@ class PlayState extends MusicBeatState
 								// waveSpriteFG.updateHitbox();
 								add(waveSprite);
 								add(waveSpriteFG);
-						*/
+}		*/
+
+                        case 'spooky': 
+				{	
+										defaultCamZoom = 0.9;
+						curStage = 'spooky';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('spooky'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+	
+
+	
 			}
 			case 'stage':
 				{
